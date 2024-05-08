@@ -1,0 +1,235 @@
+
+:root{
+ 
+  --border:0.1rem solid rgba(0,0,0,0.1);
+  --border-hover:0.1rem solid var(--black);
+  --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+    transition: width none
+    
+  } 
+  #cover{
+    background:   url(../img/book-library-with-open-textbook-min-scaled.jpg)   center center/cover no-repeat fixed ;
+    min-height: 40vh;
+  }
+  .sas{
+    text-shadow: 3px 3px 20px #080004,
+    -2px 1px 30px #1a000d;
+  }
+  .nav-link{
+    color: white !important;
+    transition: all 0.5s linear;
+    :hover{
+      color: #444 !important;
+    }
+  }
+  body{
+    overflow-x: hidden;
+  }
+  /* featured */
+  section{
+    padding: 5rem 9%;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.heading::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.01rem;
+  background: rgba(0,0,0,0.1);
+  z-index: -1;
+}
+
+.heading span{
+  font-size: 3rem;
+  padding: 5rem 2rem;
+  color: var(--black);
+  border: var(--border);
+  background: #fff;
+}
+.featured .featured-slider .box{
+  width: 25rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  border: var(--border);
+  text-align: center;
+}
+
+.featured .featured-slider .box:hover{
+  border: var(--border-hover);
+}
+
+.featured .featured-slider .box .image{
+  padding: 1rem;
+  background: linear-gradient(15deg, #eee 30%, #eee 30.1%);
+}
+
+.featured .featured-slider .box .image img{
+  height: 25rem;
+}
+
+.featured .featured-slider .box:hover .image{
+  transform: translateY(6rem);
+  cursor: pointer;
+}
+
+.featured .featured-slider .box .icons{
+  padding-bottom: var(--border-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1;
+  transform: translateY(-100%);
+  border: var(--border);
+}
+
+.featured .featured-slider .box:hover .icons{
+  transform: translateY(0);
+}
+
+.featured .featured-slider .box .icons  svg{
+  color: #444;
+  font-size: 2.2rem;
+  padding: 1.3rem 1.5rem;
+  
+}
+
+.featured .featured-slider .box .icons svg:hover{
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.featured .featured-slider .box .content{
+  background: #eee;
+  padding: 1.5rem;
+}
+
+.featured .featured-slider .box .content h3{
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.featured .featured-slider .box .content .price{
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+.featured .featured-slider .box .content .price span{
+  font-size: 1.5rem;
+  color: var(--light-color);
+  
+}
+#cover-phot{
+  background: url(../img/blog-1.jpg) no-repeat center center /cover;  
+  padding: 6rem 0;
+  position: relative;
+  z-index: 1;
+  color: white;
+  ::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.193);
+  }
+  
+}
+input::placeholder{
+  color: #c51616 !important;
+  text-align: center !important;
+  font-size: 15px;
+}
+input{
+  background-color: #444 !important;
+}
+#footer{
+  background-color: #444;
+  color: #eee;
+  font-weight: 500;
+  p{
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+  }
+}
+.links{
+  a{
+  
+    transition: all 0.5s linear;
+    :hover{
+      color: #db8709 !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .heading::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.01rem;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.heading{
+  span{
+    font-size: 3rem;
+    padding: 5rem 2rem;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+}
+#featured{
+  .swip-slide{
+    .boxs{
+      width: 25rem !important;
+      margin: 2rem 0 !important;
+      position: relative;
+      overflow: hidden !important;
+      border: 1px solid black !important;
+      text-align: center !important;
+    }
+  }
+} */
